@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="./tests/bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false">
+    <testsuites>
+        <testsuite name="Svelto REST Framework Test Suite">
+            <directory suffix=".php">./tests/SveltoRouterApiTest.php</directory>                                               			
+        </testsuite>
+    </testsuites>
+	<php>				
+		<server name="HTTP_X_Hash" value="96e38f583be378f2d8cabb07790e1dac6dbb366b14ba39d0979627731724df6e"/>		
+		<const name="HMAC_SECRET" value='thisismysecret' />		
+	</php>
+</phpunit>

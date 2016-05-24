@@ -1,0 +1,44 @@
+[
+	{		
+		"method":"GET",
+		"path":"/products",		
+		"name":"products_list",		
+		"controller":"product",
+		"action":"index"	
+	},
+	{
+		"method":"GET",
+		"path":"/products/[i:id]/",	
+		"name":"product_view",		
+		"controller":"product",
+		"action":"view"	
+	},	
+	{
+		"method":"POST",
+		"path":"/products",	
+		"name":"product_create",
+		"required": ["name", "price", "category"],
+		"middlewares": [{"name":"authorization","action":"is_authorized"}],
+		"controller":"product",
+		"action":"create",
+		"auth":true
+	},
+	{
+		"method":"PUT",
+		"path":"/products/[i:id]/",	
+		"name":"product_update",		
+		"middlewares": [{"name":"authorization","action":"is_authorized"}],
+		"controller":"product",
+		"action":"update",
+		"auth":true
+	},
+	{
+		"method":"DELETE",
+		"path":"/products/[i:id]/",	
+		"name":"product_delete",		
+		"middlewares": [{"name":"authorization","action":"is_authorized"}],
+		"controller":"product",
+		"action":"delete",
+		"auth":true
+	}
+]

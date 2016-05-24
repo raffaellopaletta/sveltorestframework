@@ -1,0 +1,27 @@
+[			
+	{		
+		"method":"GET",
+		"path":"/test/[a:name]?",		
+		"name":"test_hello",		
+		"controller":"test",
+		"action":"say_hello",
+		"auth":false
+	},
+	{		
+		"method":"GET",
+		"path":"/test/private/[a:name]",		
+		"name":"test_auth",		
+		"controller":"test",
+		"action":"private_info",
+		"auth":true
+	},
+	{
+		"method":"POST",
+		"path":"/data/save",
+		"required": ["name", "surname"],		
+		"name":"save_data",		
+		"controller":"test",
+		"action":"save",
+		"auth":false
+	}	
+]

@@ -1,0 +1,24 @@
+{
+    "name": "sveltorestframework/sveltorestframework",
+    "description": "A micro mvc framework useful for rapid REST API developement",
+    "license": "MIT",
+    "keywords": ["simple", "rest", "api", "mvc", "framework"],
+    "authors": [
+        {
+            "name": "Raffaello Paletta",
+            "email": "raffaellopaletta@gmail.com"
+        }
+    ],
+    "require": {
+		"altorouter/altorouter": ">=1.1.0"
+    },
+    "autoload": {
+        "classmap": [
+			"src/",
+			"src/models/",
+			"src/controllers/",
+			"src/middlewares/",			
+			"src/authentication/"			
+		]
+    }
+}

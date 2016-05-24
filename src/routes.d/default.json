@@ -1,0 +1,15 @@
+[	
+	{		
+		"method":"GET",
+		"path":"/",		
+		"name":"home",		
+		"controller":"test"	
+	},
+	{		
+		"method":"GET",
+		"path":"/hello/[a:name]?",		
+		"name":"hello",		
+		"controller":"test",
+		"action":"sayhello"
+	}	
+]
